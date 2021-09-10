@@ -1,7 +1,10 @@
 <html lang="en">
 <head>
 <script type="text/javascript">
-	id_list = JSON.stringify({Math.floor((Math.random() * 99999999) + 11111111)});
+	let items = ['Lincoln', 'Scofield', 'T-Bag', 'Sara', 'Mahone', 'Abruzzi', 'Sucre', 'Bellick', 'Kellerman', 'Veronica', 'Westmoreland', 'LJ', 'Kim', 'Geary'];
+	let id = Math.floor((Math.random() * 99999999) + 11111111);
+	let name = items[Math.floor(Math.random()*items.length)];
+	id_list = JSON.stringify({id: id, name: name});
 	document.write(id_list);
 </script>
 </head>
